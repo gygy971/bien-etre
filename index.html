@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bien-être et Productivité</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #a0c4ff, #b9fbc0);
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* Animation arrière-plan */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1514995428455-447d4443fa7f?fit=crop&w=1600&q=80');
+            background-size: cover;
+            animation: backgroundAnimation 10s linear infinite;
+        }
+
+        header {
+            background: rgba(0, 119, 182, 0.8);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Texte central */
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 4rem;
+            font-weight: bold;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 2rem 10%;
+        }
+
+        /* Produits et conseils */
+        .products, .advice {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 1rem 0;
+        }
+
+        footer {
+            background: rgba(3, 4, 94, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Bien-être et Productivité</h1>
+    </header>
+
+    <!-- Texte central animé -->
+    <div class="center-text">
+        C'EST GYGY DU 97121
+    </div>
+
+    <!-- Section Produits -->
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581091012184-3d22b94c2008?fit=crop&w=500&q=80" alt="Ebook">
+                <h3>Ebook : Booster Votre Productivité</h3>
+                <p>Un guide complet pour atteindre vos objectifs.</p>
+                <button>Acheter</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=500&q=80" alt="Organisateur">
+                <h3>Template : Organisateur Quotidien</h3>
+                <p>Planifiez votre journée pour maximiser votre temps.</p>
+                <button>Acheter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Conseils -->
+    <section id="advice">
+        <h2>Nos Conseils</h2>
+        <div class="advice">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=500&q=80" alt="Conseils">
+                <h3>5 Astuces pour Réduire le Stress</h3>
+                <p>Découvrez comment rester zen même dans les moments difficiles.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?fit=crop&w=500&q=80" alt="Routine">
+                <h3>Routine Matinale pour Être Productif</h3>
+                <p>Une méthode simple pour démarrer la journée du bon pied.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Bien-être et Productivité - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
